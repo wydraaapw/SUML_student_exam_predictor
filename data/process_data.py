@@ -9,6 +9,17 @@ import numpy as np
 
 
 def get_processed_data(filepath='data/raw/student-mat.csv'):
+    """
+        Wczytuje  dane, czyści je i mapuje wartości tekstowe na liczbowe
+        aby były gotowe do trenowania.
+
+        Args:
+            filepath (str): Ścieżka do pliku CSV. Domyślnie 'data/raw/student-mat.csv'.
+
+        Returns:
+            pd.DataFrame: Dataframe z danymi gotowymi dla modelu.
+        """
+
     # Sprawdzenie istnienia pliku
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"Nie znaleziono pliku: {filepath}")
