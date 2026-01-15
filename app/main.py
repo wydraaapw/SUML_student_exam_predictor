@@ -1,6 +1,6 @@
 """
 Moduł app.main
-Interfejs użytkownika wykonany przy wykorzystaniu iblioteki Streamlit.
+Interfejs użytkownika wykonany przy wykorzystaniu biblioteki Streamlit.
 """
 
 import os
@@ -17,6 +17,12 @@ if project_root not in sys.path:
 st.set_page_config(page_title="Kalkulator Zdawalności", layout="centered")
 
 def load_model():
+    """
+    Wczytuje model oraz nazwy cech z pliku .pkl.
+
+    Returns:
+        dict: Słownik, który zawiera model oraaz listę nazw kolumn.
+    """
     model_path = os.path.join(project_root, 'model', 'saved_models', 'model.pkl')
     if not os.path.exists(model_path):
         st.error("Brak modelu, uruchom: python -m model.train")
@@ -28,6 +34,9 @@ def load_model():
         st.stop()
 
 def main():
+    """
+        Funkcja renderująca interfejs Streamlit i obsługująca logikę predykcji.
+     """
     st.title("Czy zdasz egzamin?")
     st.markdown("Wprowadź swoje oceny i nawyki, aby sprawdzić szansę na sukces.")
 
