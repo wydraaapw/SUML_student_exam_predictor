@@ -10,6 +10,8 @@
 Uczeń, wprowadzając swoje dane (np. ocena z ćwiczeń, czas nauki, liczba nieobecności), może zobaczyć, jak jego zachowanie i zaangażowanie wpływają na prawdopodobieństwo zdania egzaminu.  Dzięki temu projekt może mieć zarówno wartość praktyczną jak i rozrywkową.
 Projekt został udostępniony jako aplikacja webowa. 
 
+Dataset: https://archive.ics.uci.edu/dataset/320/student+performance
+
 ### Jak sprawdzić szansę na zdanie egzaminu?
 
 1. Wprowadź dane używając pól i suwaków.
@@ -54,4 +56,5 @@ Aplikacja będzie dostępna pod adresem URL - http://127.0.0.1:8501/
 
 
    
+
 
