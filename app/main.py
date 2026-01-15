@@ -74,8 +74,11 @@ def main():
             val_failures = st.number_input("Liczba ITNów", 0, 4, 0)
 
         with c2:
-            val_absences = st.number_input("Liczba nieobecności w semestrze(suma godzin)", 0, 93, 4, help="Wpisz orientacyjną liczbę opuszczonych godzin")
-            val_study = st.select_slider("Czas nauki (tygodniowo)", options=[1, 2, 3, 4], format_func=lambda x: study_opts[x])
+            val_absences = st.number_input("Liczba nieobecności w semestrze(suma godzin)",
+                                           0, 93, 4,
+                                           help="Wpisz orientacyjną liczbę opuszczonych godzin")
+            val_study = st.select_slider("Czas nauki (tygodniowo)", options=[1, 2, 3, 4],
+                                         format_func=lambda x: study_opts[x])
 
         st.divider()
         st.subheader("Styl życia i Zdrowie")
@@ -83,12 +86,16 @@ def main():
         col_health, col_alco = st.columns(2)
 
         with col_health:
-            val_health = st.select_slider("Stan zdrowia", options=[1, 2, 3, 4, 5], value=5, format_func=lambda x: health_opts[x])
-            val_travel = st.select_slider("Czas dojazdu", options=[1, 2, 3, 4], format_func=lambda x: travel_opts[x])
+            val_health = st.select_slider("Stan zdrowia", options=[1, 2, 3, 4, 5],
+                                          value=5, format_func=lambda x: health_opts[x])
+            val_travel = st.select_slider("Czas dojazdu", options=[1, 2, 3, 4],
+                                          format_func=lambda x: travel_opts[x])
 
         with col_alco:
-            val_dalc = st.select_slider("Alkohol (Dni robocze)", options=[1, 2, 3, 4, 5], value=1, format_func=lambda x: freq_opts[x])
-            val_walc = st.select_slider("Alkohol (Weekend)", options=[1, 2, 3, 4, 5], value=2, format_func=lambda x: freq_opts[x])
+            val_dalc = st.select_slider("Alkohol (Dni robocze)", options=[1, 2, 3, 4, 5],
+                                        value=1, format_func=lambda x: freq_opts[x])
+            val_walc = st.select_slider("Alkohol (Weekend)", options=[1, 2, 3, 4, 5],
+                                        value=2, format_func=lambda x: freq_opts[x])
 
         st.divider()
         st.subheader("Pozostałe informacje")
@@ -101,8 +108,10 @@ def main():
         with c4:
             rom_disp = st.checkbox("W związku", value=False)
             val_romantic = 1 if rom_disp else 0
-            val_goout = st.select_slider("Wyjścia ze znajomymi", options=[1, 2, 3, 4, 5], value=3, format_func=lambda x: freq_opts[x])
-            val_freetime = st.select_slider("Czas wolny", options=[1, 2, 3, 4, 5], value=3, format_func=lambda x: freq_opts[x])
+            val_goout = st.select_slider("Wyjścia ze znajomymi", options=[1, 2, 3, 4, 5],
+                                         value=3, format_func=lambda x: freq_opts[x])
+            val_freetime = st.select_slider("Czas wolny", options=[1, 2, 3, 4, 5], value=3,
+                                            format_func=lambda x: freq_opts[x])
 
 
         submit = st.form_submit_button("Oblicz szansę")
