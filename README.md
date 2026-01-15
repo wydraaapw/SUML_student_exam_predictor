@@ -8,7 +8,16 @@
 
 ## O projekcie
 Uczeń, wprowadzając swoje dane (np. ocena z ćwiczeń, czas nauki, liczba nieobecności), może zobaczyć, jak jego zachowanie i zaangażowanie wpływają na prawdopodobieństwo zdania egzaminu.  Dzięki temu projekt może mieć zarówno wartość praktyczną jak i rozrywkową.
-Projekt został udostępniony jako aplikacja webowa.
+Projekt został udostępniony jako aplikacja webowa. 
+
+### Jak sprawdzić szansę na zdanie egzaminu?
+
+1. Wprowadź dane używając pól i suwaków.
+2. Naciśnij przycisk **Oblicz szansę**.
+3. Pod przyciskiem pojawi się wynik.
+
+   <img width="710" height="85" alt="image" src="https://github.com/user-attachments/assets/d975e69a-aa32-412d-b161-dcc68ab50557" />
+
 
 ## Wykorzystane technologie
 
@@ -29,7 +38,7 @@ Projekt został udostępniony jako aplikacja webowa.
    git clone https://github.com/wydraaapw/SUML_student_exam_predictor.git
    cd SUML_student_exam_predictor
    ```
-## Wybierz metodę uruchomienia:
+   
 ### Docker
 Działa na każdym systemie z zainstalowanym środowiskiem Docker - https://www.docker.com/
 
@@ -45,3 +54,4 @@ Aplikacja będzie dostępna pod adresem URL - http://127.0.0.1:8501/
 
 
    
+
