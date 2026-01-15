@@ -1,4 +1,4 @@
-# Projekt SUML - Czy uczeń zda egzamin?
+# Projekt SUML - Kalkulator zdawalności
  Aplikacja przewidująca szansę zdania egzaminu na podstawie wybranych cech ucznia.
 
 ## Autorzy
@@ -56,5 +56,6 @@ Aplikacja będzie dostępna pod adresem URL - http://127.0.0.1:8501/
 
 
    
+
 
 
