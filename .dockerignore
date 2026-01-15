@@ -1,0 +1,17 @@
+.git
+.gitignore
+
+__pycache__
+*.pyc
+
+venv
+.venv
+env
+
+.idea
+.vscode
+
+notebooks
+.ipynb_checkpoints
+
+.DS_Store
