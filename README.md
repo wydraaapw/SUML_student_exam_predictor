@@ -21,9 +21,9 @@ Dataset: https://archive.ics.uci.edu/dataset/320/student+performance
    <img width="710" height="85" alt="image" src="https://github.com/user-attachments/assets/d975e69a-aa32-412d-b161-dcc68ab50557" />
 
 
-## Wykorzystane technologie
+## Wykorzystane narzędzia
 
-| Technologia | Zastosowanie w projekcie |
+| Nazwa | Zastosowanie w projekcie |
 | :--- | :--- |
 | **Python 3.11** | Główny język programowania logiki i modelu. |
 | **Pandas** | Manipulacja danymi, czyszczenie i przygotowanie datasetu. |
@@ -50,12 +50,13 @@ docker build -t exam-app .
 ```
 2. Uruchom kontener
  ```bash
- docker run -p 8501:8501 exam-ap
+ docker run -p 8501:8501 exam-app
  ```
 Aplikacja będzie dostępna pod adresem URL - http://127.0.0.1:8501/
 
 
    
+
 
 
 
